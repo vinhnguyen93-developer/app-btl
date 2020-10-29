@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fontawsome -->
+    <script src="https://kit.fontawesome.com/606ed466f6.js" crossorigin="anonymous"></script>
+
+    <title>My Clothes</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <header>My Clothes</header>
+            <ul>
+                <li><a href="../staffs/index.html"><i class="fas fa-user"></i>Quản lý nhân viên</a></li>
+                <li><a href="../products/index.html"><i class="fas fa-tshirt"></i>Quản lý sản phẩm</a></li>
+                <li><a href="../import/index.html"><i class="far fa-clipboard"></i>Nhập hàng</a></li>
+                <li><a href="../release/index.html"><i class="fas fa-cart-plus"></i>Xuất hàng</a></li>
+                <li><a href="../track_order/index.html"><i class="fas fa-archive"></i>Theo dõi đơn hàng</a></li>
+                <li><a href="../management/index.html"><i class="fas fa-database"></i>Quản lý tồn kho</a></li>
+            </ul>
+        </div>
+
+        <div class="main-page">
+            <h1 class="mt-5">Nhập hàng vào kho</h1>
+
+            <form class="py-5 ml-5">
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4">Mã Sản phẩm</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputPassword4">Số lượng</label>
+                        <input type="text" class="form-control" id="inputPassword4">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="inputState">Kích cỡ</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Chọn...</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputState">Loại</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Chọn...</option>
+                            <option>Áo</option>
+                            <option>Quần Jeans</option>
+                            <option>Quần Kaki</option>
+                            <option>Áo phông</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Kiểm tra
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Nhập hàng</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
