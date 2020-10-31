@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fontawsome -->
+    <script src="https://kit.fontawesome.com/606ed466f6.js" crossorigin="anonymous"></script>
+
+    <title>My Clothes</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <header>My Clothes</header>
+            <ul>
+                <li><a href="../staffs/index.html"><i class="fas fa-user"></i>Quản lý nhân viên</a></li>
+                <li><a href="../products/index.html"><i class="fas fa-tshirt"></i>Quản lý sản phẩm</a></li>
+                <li><a href="../import/index.html"><i class="far fa-clipboard"></i>Nhập hàng</a></li>
+                <li><a href="../release/index.html"><i class="fas fa-cart-plus"></i>Xuất hàng</a></li>
+                <li><a href="../track_order/index.html"><i class="fas fa-archive"></i>Theo dõi đơn hàng</a></li>
+                <li><a href="../management/index.html"><i class="fas fa-database"></i>Quản lý tồn kho</a></li>
+            </ul>
+        </div>
+        <div class="main-page mt-2">
+            <h1>Quản lý tồn kho</h1>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">
+                Xuất báo cáo
+            </button>
+
+            <div class="d-flex align-items-center">
+                <form action="#" class="ml-auto d-flex">
+                    <input type="text" class="form-control">
+                    <button class="btn btn-primary ml-2">Tìm</button>
+                </form>
+            </div>
+
+            <div class="dropdown mt-5 row">
+                <div class="form-group col-md-3">
+                    <label for="inputState">Loại sản phẩm:</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Quần kaki</option>
+                        <option>Quần Jean</option>
+                        <option>Áo sơ mi</option>
+                        <option>Áo phông</option>
+                        <option>Áo khoác</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-md-3">
+                    <label for="inputState">Chọn kiểu sắp xếp:</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Số lượng</option>
+                        <option>Giá tiền</option>
+                    </select>
+                </div>
+            </div>
+
+            <table class="table mt-1">
+                <tr>
+                    <th>Mã sản phẩm</th>
+                    <th>Tên Sản phẩm</th>
+                    <th>Số lượng</th>
+                    <th>Kích thước</th>
+                    <th>Loại</th>
+                    <th>Gía tiền</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>QB</td>
+                    <td>Quần Jean ống đứng</td>
+                    <td>50</td>
+                    <td>M, L, XL</td>
+                    <td>Quần Jean</td>
+                    <td>500,000</td>
+                    <td>
+                        <i class="fas fa-pencil-alt"></i>
+                        <i class="fas fa-trash"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>TS</td>
+                    <td>Áo T-shirt</td>
+                    <td>30</td>
+                    <td>M, L, XL</td>
+                    <td>Áo</td>
+                    <td>350,000</td>
+                    <td>
+                        <i class="fas fa-pencil-alt"></i>
+                        <i class="fas fa-trash"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>S001</td>
+                    <td>Áo sơ mi nam</td>
+                    <td>25</td>
+                    <td>M, L, XL</td>
+                    <td>Áo</td>
+                    <td>600,000</td>
+                    <td>
+                        <i class="fas fa-pencil-alt"></i>
+                        <i class="fas fa-trash"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>QK</td>
+                    <td>Quần Kaki ống đứng</td>
+                    <td>40</td>
+                    <td>M, L, XL</td>
+                    <td>Quần Kaki</td>
+                    <td>450,000</td>
+                    <td>
+                        <i class="fas fa-pencil-alt"></i>
+                        <i class="fas fa-trash"></i>
+                    </td>
+                </tr>
+            </table>
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
