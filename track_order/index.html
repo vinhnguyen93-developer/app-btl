@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fontawsome -->
+    <script src="https://kit.fontawesome.com/606ed466f6.js" crossorigin="anonymous"></script>
+
+    <title>My Clothes</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <header>My Clothes</header>
+            <ul>
+                <li><a href="../staffs/index.html"><i class="fas fa-user"></i>Quản lý nhân viên</a></li>
+                <li><a href="../products/index.html"><i class="fas fa-tshirt"></i>Quản lý sản phẩm</a></li>
+                <li><a href="../import/index.html"><i class="far fa-clipboard"></i>Nhập hàng</a></li>
+                <li><a href="../release/index.html"><i class="fas fa-cart-plus"></i>Xuất hàng</a></li>
+                <li><a href="../track_order/index.html"><i class="fas fa-archive"></i>Theo dõi đơn hàng</a></li>
+                <li><a href="../management/index.html"><i class="fas fa-database"></i>Quản lý tồn kho</a></li>
+            </ul>
+        </div>
+        <div class="main-page mt-2">
+            <h1>Theo dõi đơn hàng</h1>
+
+            <div class="align-items-center mt-3 col-md-5">
+                <label>Tìm kiếm đơn hàng: </label>
+                <form action="#" class="mr-auto d-flex">
+                    <input type="text" class="form-control">
+                    <button class="btn btn-primary ml-2">Tìm</button>
+                </form>
+            </div>
+
+            <div class="card mt-3">
+                <div class="title">Đơn hàng</div>
+                <div class="info">
+                    <div class="row">
+                        <div class="col-7"> <span id="heading">Ngày xuất hàng</span><br> <span
+                                id="details">10/10/2020</span>
+                        </div>
+                        <div class="col-5 pull-right"> <span id="heading">Mã đơn hàng</span><br> <span
+                                id="details">012j1gvs356c</span> </div>
+                    </div>
+                </div>
+                <div class="pricing">
+                    <div class="row">
+                        <div class="col-9"> <span id="name">Quần kaki</span> </div>
+                        <div class="col-3"> <span id="price">2 x 400,000</span> </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-9"> <span id="name">Phí vận chuyển</span> </div>
+                        <div class="col-3"> <span id="price">50,000</span> </div>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="row">
+                        <div class="col-9"></div>
+                        <div class="col-3"><big>850,000</big></div>
+                    </div>
+                </div>
+                <div class="tracking">
+                    <div class="title">Theo dõi đơn hàng</div>
+                </div>
+                <div class="progress-track">
+                    <ul id="progressbar">
+                        <li class="step0 active " id="step1">Đã xuất</li>
+                        <li class="step0 active text-center" id="step2">Đã vận chuyển</li>
+                        <li class="step0 active text-right" id="step3">Đang trên đường</li>
+                        <li class="step0 text-right" id="step4">Đã giao</li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div class="row">
+                        <div class="col-10">Bạn muốn bất kỳ trợ giúp nào? &nbsp;<a> Hãy liên hệ với chúng tôi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
